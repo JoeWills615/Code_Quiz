@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,35 +13,30 @@
 </head>
 
 <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
-
-    <div class="timer">Time: <span id="time">0</span></div>
-
-    <div class="wrapper">
-        <div id="start-screen" class="start">
-            <h1>Coding Quiz Challenege</h1>
-            <p>
-                Try to answer the following code-related questions within the time 
-                limit. Kepp in mind that incorrect answers will penalize your 
-                score/time by ten seconds!
-            </p>
-            <button id="start">Start Quiz</button>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
         </div>
 
-        <div id="questions" class="hide">
-            <h2 id="question-title"></h2>
-            <div id="choices" class="choices"></div>
-
-
-
+        <div class="controls" class="hide">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
 
         </div>
-
 
 
 
     </div>
 
-    
+
+
 </body>
+<script src="script.js"></script>
+
 </html>

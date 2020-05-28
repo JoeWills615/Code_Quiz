@@ -75,6 +75,13 @@ body.wrong {
      
 }
 
+.score-btn {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    align-items: flex-start;
+}
+
 .controls {
     display: flex;
     justify-content: center;
